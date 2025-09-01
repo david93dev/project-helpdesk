@@ -3,6 +3,7 @@ import Login from "./pages/Login";
 import { Layout } from "./layout/Layout";
 import { Dashboard } from "./pages/HomeDash";
 import { ThemeProvider } from "./components/theme-provider";
+import NewCall from "./pages/NewCall";
 
 function App() {
   return (
@@ -18,7 +19,8 @@ function App() {
             {/* rotas protegidas ou pós-login */}
             <Route path="/app" element={<Layout />}>
               <Route index element={<Dashboard />} /> 
-              <Route path="dashboard" element={<Dashboard />} /> 
+              <Route path="dashboard" element={<Dashboard />} />
+              <Route path="nova-chamada" element={<NewCall /> } />  
             </Route>
           </Routes>
         </BrowserRouter>

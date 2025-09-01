@@ -1,5 +1,5 @@
 import DataTable from "@/components/DataTable"
-import { columns } from "@/columns/payments-columns"
+import { columns } from "@/components/TableDash-columns"
 
 // dados compatíveis com as colunas
 export const data = [

@@ -1,5 +1,5 @@
 import { DashboardCard } from "@/components/DashBoardCard";
-import Payments from "@/components/Payments";
+import Payments from "@/components/TableDash";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 

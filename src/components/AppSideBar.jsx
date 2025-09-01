@@ -25,7 +25,7 @@ import { Separator } from "./ui/separator";
 
 const items = [
   { title: "Dashboard", url: "/app/dashboard", icon: ChartNoAxesCombined },
-  { title: "Abrir Chamado", url: "/app/abrir-chamado", icon: Headset },
+  { title: "Abrir Chamado", url: "/app/nova-chamada", icon: Headset },
   { title: "Meus Chamados", url: "/app/meus-chamados", icon: Calendar },
   { title: "Perfil", url: "/app/perfil", icon: UserCog },
   { title: "Configurações", url: "/app/configuracoes", icon: Settings },
@@ -46,7 +46,7 @@ export function AppSidebar() {
           <SidebarHeader>
             <div className="flex items-center">
               <div className="w-40">
-                <img className="" src={logoSrc} alt="logo" />
+                <img src={logoSrc} alt="logo" />
               </div>
             </div>
             <Separator />
