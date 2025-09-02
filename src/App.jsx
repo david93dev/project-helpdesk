@@ -4,6 +4,10 @@ import { Layout } from "./layout/Layout";
 import { Dashboard } from "./pages/HomeDash";
 import { ThemeProvider } from "./components/theme-provider";
 import NewCall from "./pages/NewCall";
+import MyCall from "./pages/MyCall";
+import CallDetail from "./pages/CallDetail";
+import Profile from "./pages/Profile";
+
 
 function App() {
   return (
@@ -18,9 +22,12 @@ function App() {
 
             {/* rotas protegidas ou pós-login */}
             <Route path="/app" element={<Layout />}>
-              <Route index element={<Dashboard />} /> 
+              <Route index element={<Dashboard />} />
               <Route path="dashboard" element={<Dashboard />} />
-              <Route path="nova-chamada" element={<NewCall /> } />  
+              <Route path="novo-chamado" element={<NewCall />} />
+              <Route path="meus-chamados" element={<MyCall />} />
+              <Route path="meus-chamados/:id" element={<CallDetail />} />
+              <Route path="perfil" element={<Profile />} />
             </Route>
           </Routes>
         </BrowserRouter>

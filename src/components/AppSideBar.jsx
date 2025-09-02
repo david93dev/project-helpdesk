@@ -18,14 +18,11 @@ import {
   SidebarMenuButton,
   SidebarMenuItem,
 } from "@/components/ui/sidebar";
-import { useTheme } from "@/components/theme-provider";
-import logoBlack from "../assets/logo-black.png";
-import logoWhite from "../assets/logo-white.png";
 import { Separator } from "./ui/separator";
 
 const items = [
   { title: "Dashboard", url: "/app/dashboard", icon: ChartNoAxesCombined },
-  { title: "Abrir Chamado", url: "/app/nova-chamada", icon: Headset },
+  { title: "Abrir Chamado", url: "/app/novo-chamado", icon: Headset },
   { title: "Meus Chamados", url: "/app/meus-chamados", icon: Calendar },
   { title: "Perfil", url: "/app/perfil", icon: UserCog },
   { title: "Configurações", url: "/app/configuracoes", icon: Settings },
@@ -33,11 +30,6 @@ const items = [
 ];
 
 export function AppSidebar() {
-  const { theme, resolvedTheme } = useTheme();
-  const isDark =
-    theme === "dark" || (theme === "system" && resolvedTheme === "dark");
-
-  const logoSrc = isDark ? logoWhite : logoBlack;
 
   return (
     <Sidebar>
@@ -45,9 +37,7 @@ export function AppSidebar() {
         <SidebarGroup>
           <SidebarHeader>
             <div className="flex items-center">
-              <div className="w-40">
-                <img src={logoSrc} alt="logo" />
-              </div>
+                <span className="scroll-m-20 text-[var(--color-primary)] uppercase text-center text-4xl font-extrabold tracking-tight text-balance">HELPDESK</span>
             </div>
             <Separator />
           </SidebarHeader>

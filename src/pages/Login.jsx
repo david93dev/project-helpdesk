@@ -11,19 +11,11 @@ import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { useNavigate } from "react-router-dom";
 import { ModeToggle } from "@/components/mode-toggle";
-import { useTheme } from "@/components/theme-provider";
-import logoBlack from "../assets/logo-black.png";
-import logoWhite from "../assets/logo-white.png";
-import { Separator } from "@radix-ui/react-separator";
-import { SidebarSeparator } from "@/components/ui/sidebar";
+
 
 export default function Login() {
   const navigate = useNavigate();
-  const { theme, resolvedTheme } = useTheme();
-  const isDark =
-    theme === "dark" || (theme === "system" && resolvedTheme === "dark");
-
-  const logoSrc = isDark ? logoWhite : logoBlack;
+ 
   return (
     <>
       <div className="flex w-auto h-dvh justify-center items-center">
@@ -31,13 +23,13 @@ export default function Login() {
           <ModeToggle />
         </div>
         <Card className="w-full max-w-sm">
-          <div className="flex items-center justify-center mx-auto pr-5">
-            <div className="w-50">
-              <img className="" src={logoSrc} alt="logo" />
+          <div className="flex items-center justify-center mx-auto">
+            <div >
+              <span className="scroll-m-20 text-[var(--color-primary)] uppercase text-center text-4xl font-extrabold tracking-tight text-balance">HELPDESK</span>
             </div>
           </div>
           <CardHeader>
-            <CardTitle>Login</CardTitle>
+            <CardTitle className="text-2xl">Login</CardTitle>
             <CardDescription>
               Digite seu e-mail abaixo para acessar sua conta
             </CardDescription>
@@ -64,7 +56,7 @@ export default function Login() {
                       Esqueceu a senha?
                     </a>
                   </div>
-                  <Input id="password" type="password" required />
+                  <Input id="password" type="password" placeholder="Digite sua senha " required />
                 </div>
               </div>
             </form>

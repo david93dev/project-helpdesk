@@ -34,4 +34,5 @@ export const columns = [
     header: "Data",
     cell: ({ row }) => String(row.getValue("date") ?? "—"),
   },
+  
 ]

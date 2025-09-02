@@ -1,5 +1,5 @@
 import DataTable from "@/components/DataTable"
-import { columns } from "@/components/TableDash-columns"
+import { columns } from "@/components/TableMyCall-columns"
 
 // dados compatíveis com as colunas
 export const data = [
@@ -16,6 +16,7 @@ export const data = [
     email: "bob@example.com",
     status: "pending",
     date: "2025-08-29 09:12",
+    button: ""
   },
   {
     id: "3",
@@ -23,6 +24,7 @@ export const data = [
     email: "carol@example.com",
     status: "processing",
     date: "2025-08-30 16:47",
+    button: ""
   },
   {
     id: "4",
@@ -33,7 +35,7 @@ export const data = [
   },
 ]
 
-export default function TableDash() {
+export default function TableMyCall() {
   return (
     <section className="py-4">
       <h4 className="scroll-m-20 text-xl font-semibold tracking-tight py-4">Últimos chamados</h4>

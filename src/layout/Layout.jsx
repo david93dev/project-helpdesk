@@ -1,5 +1,5 @@
 import { SidebarProvider, SidebarTrigger } from "@/components/ui/sidebar"
-import { AppSidebar } from "@/components/AppSidebar"
+import { AppSidebar } from "@/components/AppSideBar"
 import { Outlet } from "react-router-dom"
 import { ModeToggle } from "@/components/mode-toggle"
 
