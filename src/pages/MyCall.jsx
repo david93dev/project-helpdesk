@@ -1,5 +1,5 @@
+import HeaderPages from "@/components/HeaderPages";
 import TableMyCall from "@/components/TableMyCall";
-import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import {
   Select,
@@ -10,21 +10,14 @@ import {
   SelectTrigger,
   SelectValue,
 } from "@/components/ui/select";
-import { Link } from "react-router-dom";
+
 
 
 const MyCall = () => {
   return (
-    <div className="mx-auto w-[95vw] max-w-7xl pt-8">
-      <div className="pb-4 flex justify-between max-w-6xl items-center">
-        <h3 className="scroll-m-20 text-2xl font-semibold tracking-tight">
-          Meus chamados
-        </h3>
+    <div className="mx-auto w-[78vw] pt-8">
 
-        <Button asChild>
-          <Link to="/app/novo-chamado">+ Novo Chamado</Link>
-        </Button>
-      </div>
+      <HeaderPages title={"Meus chamados"} nameButton={"+ Novo Chamado"} to={"/app/novo-chamado"}/>
 
       <div className="mt-8 flex gap-2 max-w-2xl">
         <Input
