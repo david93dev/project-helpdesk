@@ -25,7 +25,7 @@ const items = [
   { title: "Abrir Chamado", url: "/app/novo-chamado", icon: Headset },
   { title: "Meus Chamados", url: "/app/meus-chamados", icon: Calendar },
   { title: "Perfil", url: "/app/perfil", icon: UserCog },
-  { title: "Configurações", url: "/app/configuracoes", icon: Settings },
+  { title: "Configurações", url: "/app/configuracao", icon: Settings },
   { title: "Sair", url: "/login", icon: LogOut },
 ];
 

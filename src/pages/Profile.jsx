@@ -94,7 +94,7 @@ const Profile = () => {
                 </Label>
                 <Input
                   id="Cargo"
-                  placeHolder="Altere seu cargp"
+                  placeHolder="Altere seu cargo"
                   readOnly
                 />
               </div>

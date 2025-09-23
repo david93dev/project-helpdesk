@@ -7,6 +7,7 @@ import NewCall from "./pages/NewCall";
 import MyCall from "./pages/MyCall";
 import CallDetail from "./pages/CallDetail";
 import Profile from "./pages/Profile";
+import ConfigPage from "./pages/ConfigPage";
 
 
 function App() {
@@ -28,6 +29,7 @@ function App() {
               <Route path="meus-chamados" element={<MyCall />} />
               <Route path="meus-chamados/:id" element={<CallDetail />} />
               <Route path="perfil" element={<Profile />} />
+              <Route path="configuracao" element={<ConfigPage />} />
             </Route>
           </Routes>
         </BrowserRouter>

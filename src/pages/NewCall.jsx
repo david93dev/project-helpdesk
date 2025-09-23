@@ -16,7 +16,7 @@ import React from "react";
 
 const NewCall = () => {
   return (
-    <div className="mx-auto w-[95vw] max-w-2xl pt-8">
+    <div className="mx-auto w-[78vw] max-w-4xl pt-8">
       <div className="pb-4 flex justify-between items-center">
         <h3 className="scroll-m-20 text-2xl font-semibold tracking-tight">
           Abrir Chamado

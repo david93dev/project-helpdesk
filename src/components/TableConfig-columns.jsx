@@ -1,12 +1,10 @@
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
-import { Separator } from "./ui/separator";
 
 export const columns = [
   { accessorKey: "id", header: "ID" },
-  { accessorKey: "title", header: "Título" },
-  { accessorKey: "email", header: "Email" },
+   { accessorKey: "email", header: "Email" },
   {
     accessorKey: "status",
     header: "Status",
@@ -14,22 +12,12 @@ export const columns = [
       const value = String(row.getValue("status") ?? "").toLowerCase();
       const map = {
         success: {
-          label: "Sucesso",
+          label: "Ativo",
           className:
             "border-emerald-500/20 bg-emerald-500/15 text-emerald-700 dark:text-emerald-300",
         },
-        pending: {
-          label: "Pendente",
-          className:
-            "border-amber-500/20  bg-amber-500/15  text-amber-700  dark:text-amber-300",
-        },
-        processing: {
-          label: "Em andamento",
-          className:
-            "border-sky-500/20    bg-sky-500/15    text-sky-700    dark:text-sky-300",
-        },
         failed: {
-          label: "Falhou",
+          label: "Bloqueado",
           className:
             "border-red-500/20    bg-red-500/15    text-red-700    dark:text-red-300",
         },
@@ -58,10 +46,11 @@ export const columns = [
       const ticket = row.original; // { id, title, email, status, date, ... }
       return (
         
-          <Link className="border m-1 px-2 py-1 rounded-sm" to={`/app/meus-chamados/${ticket.id}`} state={{ ticket }}>
+          <Link className="border m-1 px-2 py-1 rounded-sm" to={`/app/perfil/${ticket.id}`} state={{ ticket }}>
             Ver
           </Link>
-        
+          
+       
       );
     },
   },

@@ -17,7 +17,7 @@ const MyCall = () => {
   return (
     <div className="mx-auto w-[78vw] pt-8">
 
-      <HeaderPages title={"Meus chamados"} nameButton={"+ Novo Chamado"} to={"/app/novo-chamado"}/>
+      <HeaderPages title={"Meus chamados"} />
 
       <div className="mt-8 flex gap-2 max-w-2xl">
         <Input

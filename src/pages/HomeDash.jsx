@@ -16,7 +16,7 @@ export function Dashboard() {
   return (
     <div className="mx-auto w-[78vw] pt-8">
       
-      <HeaderPages title={"Dashboard"} nameButton={"+ Novo Chamado"} to={"/app/novo-chamado"}/>
+      <HeaderPages title={"Dashboard"} />
 
       {/* grid responsiva para os cards */}
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-5 max-w-6xl">

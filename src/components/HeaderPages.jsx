@@ -2,7 +2,7 @@ import React from "react";
 import { Button } from "./ui/button";
 import { Link } from "react-router-dom";
 
-const HeaderPages = ({title, nameButton, to}) => {
+const HeaderPages = ({title, nameButton='+ Novo Chamado', to}) => {
   return (
     <div className="pb-8 flex justify-between max-w-6xl items-center">
       <h3 className="scroll-m-20 text-2xl font-semibold tracking-tight">

@@ -10,15 +10,14 @@ export default function CallDetail() {
   const navigate = useNavigate();
   const location = useLocation();
 
-  // Se veio do Link com state, temos os dados já aqui:
+  
   const [ticket, setTicket] = useState(location.state?.ticket ?? null);
 
-  // Fallback: se não veio no state (acesso direto/refresh), busque na API
+  
   useEffect(() => {
     if (ticket) return;
     (async () => {
       try {
-        // Troque pela sua API real
         const res = await fetch(`/api/calls/${id}`);
         if (!res.ok) throw new Error("Falha ao buscar chamado");
         const data = await res.json();
@@ -46,8 +45,6 @@ export default function CallDetail() {
         <h1 className="text-2xl font-semibold">Chamado ID: {id}</h1>
         <div className="flex gap-2">
           <Button variant="outline" onClick={() => navigate(-1)}>Voltar</Button>
-          {/* Ex.: ação */}
-          {/* <Button>Editar</Button> */}
         </div>
       </div>
 
